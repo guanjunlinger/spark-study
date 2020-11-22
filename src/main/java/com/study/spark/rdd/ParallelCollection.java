@@ -7,10 +7,10 @@ import org.apache.spark.api.java.JavaSparkContext;
 import java.util.Arrays;
 import java.util.List;
 
-public class InternalData {
+public class ParallelCollection {
 
     public static void main(String[] args) {
-        SparkConf conf = new SparkConf().setAppName("InternalData").setMaster("local[3]");
+        SparkConf conf = new SparkConf().setAppName("ParallelCollection").setMaster("local[3]");
         JavaSparkContext sc = new JavaSparkContext(conf);
 
         List<Integer> data = Arrays.asList(1, 2, 2, 3, 4, 5);

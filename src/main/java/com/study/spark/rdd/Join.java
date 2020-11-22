@@ -15,7 +15,7 @@ public class Join {
         SparkConf conf = new SparkConf().setAppName("Join").setMaster("local[2]");
         JavaSparkContext sc = new JavaSparkContext(conf);
 
-        JavaRDD<String> distFile = sc.textFile("E:/project/sparkstudy/src/main/resources/word-count" + ".txt");
+        JavaRDD<String> distFile = sc.textFile("D:\\gitRepository\\spark-study\\src\\main\\resources\\word-count.txt");
         JavaPairRDD<String, Integer> javaPairRDD =
                 distFile.flatMap(s -> Arrays.asList(s.split(" ")).iterator())
                         .mapToPair(s -> new Tuple2(s, 1));
