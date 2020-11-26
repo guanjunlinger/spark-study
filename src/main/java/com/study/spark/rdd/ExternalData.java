@@ -7,7 +7,9 @@ import org.apache.spark.api.java.JavaSparkContext;
 import scala.Tuple2;
 import java.util.Arrays;
 
-
+/**
+ * spark-submit --class com.study.spark.rdd.ExternalData spark-study-1.0-SNAPSHOT.jar
+ */
 public class ExternalData {
 
     public static void main(String[] args) {
@@ -18,6 +20,7 @@ public class ExternalData {
         JavaPairRDD<String, Integer> javaPairRDD =
                 distFile.flatMap(s -> Arrays.asList(s.split(" ")).iterator())
                         .mapToPair(s -> new Tuple2(s, 1));
+        javaPairRDD = javaPairRDD.reduceByKey((a,b)->a+b);
         System.out.println(javaPairRDD.collect());
     }
 }

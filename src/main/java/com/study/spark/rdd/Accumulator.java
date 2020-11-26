@@ -12,8 +12,8 @@ public class Accumulator {
         SparkConf conf = new SparkConf().setAppName("Accumulator").setMaster("local[3]");
         JavaSparkContext sc = new JavaSparkContext(conf);
 
-        JavaRDD<String> distFile = sc.textFile("E:/project/sparkstudy/src/main/resources/word-count" +
-                ".txt").flatMap(s -> Arrays.asList(s.split(" ")).iterator());
+        JavaRDD<String> distFile = sc.textFile("E:\\project\\spark-study\\src\\main\\resources\\word-count.txt")
+                .flatMap(s -> Arrays.asList(s.split(" ")).iterator());
         MyAccumulator myAccumulator = new MyAccumulator();
         sc.sc().register(myAccumulator, "myAccumulator");
         distFile.foreach(s -> myAccumulator.add(s));

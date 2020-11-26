@@ -7,6 +7,9 @@ import org.apache.spark.api.java.JavaSparkContext;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * spark-submit --class com.study.spark.rdd.ParallelCollection spark-study-1.0-SNAPSHOT.jar
+ */
 public class ParallelCollection {
 
     public static void main(String[] args) {
