@@ -6,11 +6,7 @@ import org.apache.spark.Partitioner;
 @Data
 public class MyPartitioner extends Partitioner {
 
-    private int partitioners = 10;
-
-    public MyPartitioner() {
-
-    }
+    private int partitioners;
 
     public MyPartitioner(int partitioners) {
         this.partitioners = partitioners;
