@@ -9,15 +9,16 @@ import scala.Tuple2;
 
 import java.util.Arrays;
 
-
+/**
+ * spark-submit --class com.study.spark.Partitioner spark-study-1.0-SNAPSHOT.jar
+ */
 public class Partitioner {
 
     public static void main(String[] args) {
         SparkConf conf = new SparkConf().setAppName("Partitioner").setMaster("local[2]");
         JavaSparkContext sc = new JavaSparkContext(conf);
 
-        JavaRDD<String> distFile = sc.textFile("E:/project/sparkstudy/src/main/resources/word-count" +
-                ".txt");
+        JavaRDD<String> distFile = sc.textFile("E:/project/sparkstudy/src/main/resources/word-count.txt");
         JavaPairRDD<String, Integer> javaPairRDD =
                 distFile.flatMap(s -> Arrays.asList(s.split(" ")).iterator())
                         .mapToPair(s -> new Tuple2(s, 1)).partitionBy(new MyPartitioner(20));
