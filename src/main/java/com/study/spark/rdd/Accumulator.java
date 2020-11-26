@@ -7,6 +7,9 @@ import org.apache.spark.api.java.JavaSparkContext;
 
 import java.util.Arrays;
 
+/**
+ * spark-submit --class com.study.spark.rdd.Accumulator spark-study-1.0-SNAPSHOT.jar
+ */
 public class Accumulator {
     public static void main(String[] args) {
         SparkConf conf = new SparkConf().setAppName("Accumulator").setMaster("local[3]");
