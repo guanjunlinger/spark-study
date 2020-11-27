@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="14a9a752-2504-47e8-9ab6-3b6e56ddc281" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/spark/custom/MyPartitioner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/spark/custom/MyPartitioner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/spark/rdd/Partitioner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/spark/rdd/Partitioner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/study/spark/streaming/WordCount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/study/spark/streaming/WordCount.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -30,23 +29,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/study/spark/rdd/ExternalData.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="10" column="4" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="85" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/study/spark/rdd/Partitioner.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/study/spark/streaming/WordCount.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+            <state relative-caret-position="102">
+              <caret line="23" column="85" selection-start-line="23" selection-start-column="85" selection-end-line="23" selection-end-column="85" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -55,15 +42,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/study/spark/custom/MyPartitioner.java">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-streaming_2.11/2.0.0/spark-streaming_2.11-2.0.0.jar!/org/apache/spark/streaming/api/java/JavaStreamingContext.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#221#222#0" expanded="true" />
-                <element signature="e#269#270#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="181">
+              <caret line="129" column="44" lean-forward="true" selection-start-line="129" selection-start-column="44" selection-end-line="129" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -104,7 +86,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/study/spark/MyPartitioner.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/study/spark/streaming/SocketTextClient.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/study/spark/streaming/WordCount.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/study/spark/streaming/KafkaIntegration.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/com/study/spark/rdd/InternalData.java" />
@@ -118,6 +99,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/study/spark/rdd/BroadcastVariable.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/study/spark/rdd/Partitioner.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/study/spark/custom/MyPartitioner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/study/spark/streaming/WordCount.java" />
       </list>
     </option>
   </component>
@@ -189,7 +171,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="spark" type="462c0819:PsiDirectoryNode" />
-              <item name="rdd" type="462c0819:PsiDirectoryNode" />
+              <item name="streaming" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="spark-study" type="b2602c69:ProjectViewProjectNode" />
@@ -209,7 +191,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1606464288105" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1606471311781" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com/study/spark" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -438,7 +420,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55044000" />
+    <option name="totallyTimeSpent" value="57074000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -451,9 +433,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3944563" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3944563" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -462,7 +443,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286334" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3264642" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3264642" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -480,7 +461,7 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Database" order="4" weight="0.32942432" />
       <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Maven" order="6" weight="0.3283582" />
+      <window_info anchor="right" id="Maven" order="6" visible="true" weight="0.3283582" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Bean Validation" order="9" weight="0.32995737" />
@@ -505,7 +486,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-core_2.11/2.2.0/spark-core_2.11-2.2.0.jar!/org/apache/spark/SparkConf.class" />
     <entry file="file://$PROJECT_DIR$/ReadMe.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -626,13 +606,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-streaming_2.11/2.0.0/spark-streaming_2.11-2.0.0.jar!/org/apache/spark/streaming/api/java/JavaStreamingContext.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="82" column="69" selection-start-line="82" selection-start-column="69" selection-end-line="82" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-streaming_2.11/2.0.0/spark-streaming_2.11-2.0.0.jar!/org/apache/spark/streaming/api/java/AbstractJavaDStreamLike.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="281">
@@ -742,13 +715,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/study/spark/streaming/WordCount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-end-line="14" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/study/spark/rdd/ParallelCollection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="567">
@@ -847,6 +813,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
           <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/java/JDK18/src.zip!/java/util/Queue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="143" column="17" selection-start-line="143" selection-start-column="17" selection-end-line="143" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/spark/spark-streaming_2.11/2.0.0/spark-streaming_2.11-2.0.0.jar!/org/apache/spark/streaming/api/java/JavaStreamingContext.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="129" column="44" lean-forward="true" selection-start-line="129" selection-start-column="44" selection-end-line="129" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/study/spark/streaming/WordCount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="23" column="85" selection-start-line="23" selection-start-column="85" selection-end-line="23" selection-end-column="85" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
