@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
- * spark-submit --class com.study.spark.Partitioner spark-study-1.0-SNAPSHOT.jar
+ * spark-submit --class com.study.spark.rdd.Partitioner spark-study-1.0-SNAPSHOT.jar
  */
 public class Partitioner {
 

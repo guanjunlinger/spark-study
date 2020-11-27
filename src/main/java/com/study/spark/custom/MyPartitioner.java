@@ -22,6 +22,6 @@ public class MyPartitioner extends Partitioner {
         if (o == null) {
             return 0;
         }
-        return o.hashCode() % numPartitions();
+        return Math.abs(o.hashCode()) % numPartitions();
     }
 }
