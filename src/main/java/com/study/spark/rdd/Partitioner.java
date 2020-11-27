@@ -19,7 +19,7 @@ public class Partitioner {
         SparkConf conf = new SparkConf().setAppName("Partitioner").setMaster("local[3]");
         JavaSparkContext sc = new JavaSparkContext(conf);
 
-        JavaRDD<String> distFile = sc.textFile("E:/project/spark-study/src/main/resources/word-count.txt");
+        JavaRDD<String> distFile = sc.textFile("E:\\project\\spark-study\\src\\main\\resources\\word-count.txt");
         JavaPairRDD<String, Integer> javaPairRDD =
                 distFile.flatMap(s -> Arrays.asList(s.split(" ")).iterator())
                         .mapToPair(s -> new Tuple2(s, 1)).partitionBy(new MyPartitioner(10));
@@ -30,6 +30,6 @@ public class Partitioner {
                 result.add(v1+"_"+v2.next());
             }
             return result.iterator();
-        },true).foreach(s -> System.out.println(s));
+        },false).foreach(s -> System.out.println(s));
     }
 }
