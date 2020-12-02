@@ -16,7 +16,8 @@ import java.util.Queue;
 public class Checkpoint {
 
     public static void main(String[] args) throws InterruptedException {
-        String checkpointDirectory = "E:\\project\\spark-study\\src\\main\\resources\\";
+        System.setProperty("hadoop.home.dir", "D:\\checkpoint\\hadoop-common-2.2.0-bin-master");
+        String checkpointDirectory = "file:///E:\\project\\spark-study\\src\\main\\resources\\";
         JavaStreamingContext ssc = JavaStreamingContext.getOrCreate(checkpointDirectory, () -> {
             SparkConf conf = new SparkConf();
             conf.setAppName("Checkpoint").setMaster("local[3]");
