@@ -10,13 +10,16 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
 
+/**
+ * spark-submit --class com.study.spark.streaming.Checkpoint spark-study-1.0-SNAPSHOT.jar
+ */
 public class Checkpoint {
 
     public static void main(String[] args) throws InterruptedException {
         String checkpointDirectory = "E:\\project\\spark-study\\src\\main\\resources\\";
         JavaStreamingContext ssc = JavaStreamingContext.getOrCreate(checkpointDirectory, () -> {
             SparkConf conf = new SparkConf();
-            conf.setAppName("wordCount").setMaster("local[3]");
+            conf.setAppName("Checkpoint").setMaster("local[3]");
             JavaStreamingContext jsc = new JavaStreamingContext(conf, Durations.seconds(60));
             jsc.checkpoint(checkpointDirectory);
             return jsc;
