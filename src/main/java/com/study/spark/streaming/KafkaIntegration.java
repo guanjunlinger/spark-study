@@ -19,7 +19,7 @@ public class KafkaIntegration {
 
     public static void main(String[] args) {
         Map<String, Object> kafkaParams = new HashMap<>();
-        kafkaParams.put("bootstrap.servers", "localhost:9092,anotherhost:9092");
+        kafkaParams.put("bootstrap.servers", "localhost:9092");
         kafkaParams.put("key.deserializer", StringDeserializer.class);
         kafkaParams.put("value.deserializer", StringDeserializer.class);
         kafkaParams.put("group.id", "use_a_separate_group_id_for_each_stream");
