@@ -15,7 +15,7 @@ import java.util.*;
 
 public class KafkaIntegration {
 
-    private static Logger logger = Logger.getLogger("com.study.spark.streaming.KafkaIntegration");
+    private static Logger logger = Logger.getLogger("org.apache.spark");
 
     public static void main(String[] args) {
         Map<String, Object> kafkaParams = new HashMap<>();
