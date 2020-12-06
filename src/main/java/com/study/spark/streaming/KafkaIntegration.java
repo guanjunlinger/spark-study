@@ -14,6 +14,8 @@ import org.apache.spark.streaming.kafka010.*;
 import java.util.*;
 
 /**
+ * kafka-console-producer --bootstrap-server BZD21333-PC.kingsoft.cn:9092 --topic my-topic
+ *
  * spark-submit --class com.study.spark.streaming.KafkaIntegration spark-study-1.0-SNAPSHOT.jar
  */
 
