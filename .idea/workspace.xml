@@ -150,7 +150,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1612428151145" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1612429759679" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com/study/spark" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../adx3.0" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -207,7 +207,7 @@
       <workItem from="1607246212834" duration="8000" />
       <workItem from="1612143492627" duration="619000" />
       <workItem from="1612423209021" duration="875000" />
-      <workItem from="1612424866688" duration="1710000" />
+      <workItem from="1612424866688" duration="2500000" />
     </task>
     <task id="LOCAL-00001" summary="外部数据">
       <created>1605614535046</created>
@@ -398,11 +398,25 @@
       <option name="project" value="LOCAL" />
       <updated>1612143961918</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Spark  配置">
+      <created>1612428007355</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1612428007355</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Spark  配置">
+      <created>1612428164118</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1612428164118</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74450000" />
+    <option name="totallyTimeSpent" value="75240000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -415,7 +429,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.56663114" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -466,7 +479,8 @@
     <MESSAGE value="socket流处理" />
     <MESSAGE value="自定义接收器" />
     <MESSAGE value="集成kafka" />
-    <option name="LAST_COMMIT_MESSAGE" value="集成kafka" />
+    <MESSAGE value="Spark  配置" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spark  配置" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
