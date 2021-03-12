@@ -16,8 +16,6 @@ public class ScalarFunction {
                 .getOrCreate();
 
         UserDefinedFunction strLen = udf(new StrLenFunction(), DataTypes.IntegerType);
-
-
         spark.udf().register("strLen", strLen);
         spark.sql("SELECT strLen('test')").show();
     }
