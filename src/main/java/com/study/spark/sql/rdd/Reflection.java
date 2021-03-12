@@ -6,7 +6,7 @@ import org.apache.spark.sql.Row;
 import org.apache.spark.sql.SparkSession;
 
 
-public class reflection {
+public class Reflection {
 
     public static void main(String[] args) {
         SparkSession sparkSession = SparkSession
