@@ -1,12 +1,11 @@
 package com.study.spark.sql.collection;
 
 import com.study.spark.sql.rdd.Person;
-import org.apache.spark.sql.Dataset;
-import org.apache.spark.sql.Encoder;
-import org.apache.spark.sql.Encoders;
-import org.apache.spark.sql.SparkSession;
+import org.apache.spark.sql.*;
 
 import java.util.Collections;
+
+import static org.apache.spark.sql.functions.col;
 
 public class Collection {
 
@@ -26,6 +25,7 @@ public class Collection {
                 Collections.singletonList(person),
                 personEncoder
         );
-        javaBeanDS.show();
+        javaBeanDS.where(col("name").notEqual("jun")).show();
+
     }
 }

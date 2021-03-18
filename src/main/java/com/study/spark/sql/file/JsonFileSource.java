@@ -13,6 +13,9 @@ public class JsonFileSource {
                 .getOrCreate();
 
         Dataset<Row> dataSet = sparkSession.read().json("E:\\project\\spark-study\\src\\main\\resources\\person.json");
-        dataSet.printSchema();
+        dataSet.createOrReplaceTempView("person");
+        Dataset<Row> sqlDF = sparkSession.sql("SELECT * FROM person where age='32'");
+        sqlDF.show();
+
     }
 }
